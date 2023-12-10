@@ -84,6 +84,6 @@ def predict():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Flask app exposing yolov7 models")
-    parser.add_argument("--port", default=5000, type=int, help="port number")
+    parser.add_argument("--port", default=8000, type=int, help="port number")
     args = parser.parse_args()
     app.run(host="0.0.0.0", port=args.port, debug=True, use_reloader=False)
